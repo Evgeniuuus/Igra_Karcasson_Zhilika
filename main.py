@@ -13,6 +13,25 @@ from pygame.locals import *
 
 import tileSets as ts
 
+
+import os
+
+
+def get_resource_path(relative_path):
+    """Получить путь к ресурсу, будь то dev или EXE."""
+    if hasattr(sys, '_MEIPASS'):
+        # Путь, если программа запущена из EXE
+        return os.path.join(sys._MEIPASS, relative_path)
+    return os.path.join(os.path.abspath("."), relative_path)
+
+
+# Пример использования:
+textures_path = get_resource_path("textures")
+if not os.path.exists(textures_path):
+    print(f"Ошибка: папка {textures_path} не найдена!")
+else:
+    print(f"Папка {textures_path} успешно загружена.")
+
 pygame.init()
 
 FPS = 144
@@ -137,7 +156,7 @@ class App:
             if side == 'NNW': return 5, 5
             if side == 'NNE': return 123 - size, 5
             if side == 'ENE': return 123 - size, 5
-            if side == 'ESE': return (123 - size, 123 - size)
+            if side == 'ESE': return 123 - size, 123 - size
             if side == 'SSE': return 123 - size, 123 - size
             if side == 'SSW': return 5, 123 - size
             if side == 'WSW': return 5, 123 - size
@@ -145,7 +164,7 @@ class App:
 
         def drawGame(self):
             if self.hasStarted:
-                screen.fill((77, 40, 0))
+                screen.fill((46, 46, 46))
                 for col in self.placedTiles:
                     for tile in col:
                         if tile is not None:
@@ -173,7 +192,7 @@ class App:
                             if 1 in self.availableSpots[i][j]:
                                 x = i * 128 + math.floor(self.relativeX)
                                 y = j * 128 + math.floor(self.relativeY)
-                                pygame.draw.rect(screen, (128, 64, 0), pygame.Rect(x, y, 128, 128))
+                                pygame.draw.rect(screen, (76, 76, 76), pygame.Rect(x, y, 128, 128))
                                 if self.availableSpots[i][j][self.currentRotation]:
                                     pygame.draw.rect(screen, (0, 153, 0), pygame.Rect(x, y, 128, 128))
                 if self.drawSkip:
@@ -182,7 +201,7 @@ class App:
                     infoWidth = 240
                     infoHeight = 64
                     pygame.draw.rect(screen, (252, 177, 3), pygame.Rect(infoX, infoY, infoWidth, infoHeight))
-                    text = font.render("Skip placing a meeple", True, (0, 0, 0))
+                    text = font.render("Пропуск размещения", True, (0, 0, 0))
                     screen.blit(text, text.get_rect(center=((SCREEN_WIDTH - self.gameStateMenuWidth) / 2, infoY + 32)))
             if self.hasEnded and self.drawWinner:
                 infoWidth = 480
@@ -200,9 +219,9 @@ class App:
                             multipleWinners = 1
                         tmp += player
                 if multipleWinners:
-                    tmp += " are the winners."
+                    tmp += " Победители."
                 else:
-                    tmp += " is the winner."
+                    tmp += " Победитель."
                 text = font.render(tmp, True, (0, 0, 0))
                 screen.blit(text, text.get_rect(center=((SCREEN_WIDTH - self.gameStateMenuWidth) / 2, infoY + 32)))
 
@@ -220,7 +239,7 @@ class App:
                     self.endGame()
 
         def drawGameState(self):
-            pygame.draw.rect(screen, (200, 115, 24),
+            pygame.draw.rect(screen, (57, 105, 56),
                              pygame.Rect(SCREEN_WIDTH - self.gameStateMenuWidth, 0, self.gameStateMenuWidth,
                                          SCREEN_HEIGHT))
             pygame.draw.rect(screen, (77, 40, 0),
