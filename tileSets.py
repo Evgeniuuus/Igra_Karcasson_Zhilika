@@ -135,3 +135,119 @@ tile70 = Tile('tiles.png', 256 * 5, 256 * 4, [['N', 'E', 'W']], [['SSE', 'SSW']]
 tile71 = Tile('tiles.png', 256 * 6, 256 * 4, [['N', 'E', 'W']], [['SSE', 'SSW']], [], 0, 0)
 tile72 = Tile('tiles.png', 256 * 7, 256 * 4, [['N', 'E', 'W']], [['SSE', 'SSW']], [], 0, 1)
 
+# ---------- Повтор всех карточек
+
+tile73 = Tile('tiles.png', 256 * 0, 256 * 0, [['N', 'W', 'E']], [['SSE'], ['SSW']], [['C', 'S']], 0, 0)
+tile74 = Tile('tiles.png', 256 * 1, 256 * 0, [['N', 'W', 'E']], [['SSE'], ['SSW']], [['C', 'S']], 0, 1)
+tile75 = Tile('tiles.png', 256 * 2, 256 * 0, [['N', 'W', 'E']], [['SSE'], ['SSW']], [['C', 'S']], 0, 1)
+tile76 = Tile('tiles.png', 256 * 3, 256 * 0, [['N', 'W']], [['SSE', 'SSW', 'ENE', 'ESE']], [], 0, 0)
+tile77 = Tile('tiles.png', 256 * 4, 256 * 0, [['N', 'W']], [['SSE', 'SSW', 'ENE', 'ESE']], [], 0, 0)
+tile78 = Tile('tiles.png', 256 * 5, 256 * 0, [['N', 'W']], [['SSE', 'SSW', 'ENE', 'ESE']], [], 0, 0)
+tile79 = Tile('tiles.png', 256 * 6, 256 * 0, [['N', 'W']], [['SSE', 'SSW', 'ENE', 'ESE']], [], 0, 1)
+tile80 = Tile('tiles.png', 256 * 7, 256 * 0, [['N', 'W']], [['SSE', 'SSW', 'ENE', 'ESE']], [], 0, 1)
+tile81 = Tile('tiles.png', 256 * 8, 256 * 0, [['N', 'W']], [['SSW', 'ENE'], ['ESE', 'SSE']], [['E', 'S']], 0, 0)
+tile82 = Tile('tiles.png', 256 * 9, 256 * 0, [['N', 'W']], [['SSW', 'ENE'], ['ESE', 'SSE']], [['E', 'S']], 0, 0)
+tile83 = Tile('tiles.png', 256 * 10, 256 * 0, [['N', 'W']], [['SSW', 'ENE'], ['ESE', 'SSE']], [['E', 'S']], 0, 0)
+tile84 = Tile('tiles.png', 256 * 11, 256 * 0, [['N', 'W']], [['SSW', 'ENE'], ['ESE', 'SSE']], [['E', 'S']], 0, 1)
+tile85 = Tile('tiles.png', 256 * 12, 256 * 0, [['N', 'W']], [['SSW', 'ENE'], ['ESE', 'SSE']], [['E', 'S']], 0, 1)
+tile86 = Tile('tiles.png', 256 * 13, 256 * 0, [['E', 'W']], [['SSE', 'SSW'], ['NNW', 'NNE']], [], 0, 0)
+tile87 = Tile('tiles.png', 256 * 14, 256 * 0, [['E', 'W']], [['SSE', 'SSW'], ['NNW', 'NNE']], [], 0, 1)
+tile88 = Tile('tiles.png', 256 * 15, 256 * 0, [['E', 'W']], [['SSE', 'SSW'], ['NNW', 'NNE']], [], 0, 1)
+
+tile89 = Tile('tiles.png', 256 * 0, 256 * 1, [['W'], ['N']], [['SSE', 'SSW', 'ENE', 'ESE']], [], 0, 0)
+tile90 = Tile('tiles.png', 256 * 1, 256 * 1, [['W'], ['N']], [['SSE', 'SSW', 'ENE', 'ESE']], [], 0, 0)
+tile91 = Tile('tiles.png', 256 * 2, 256 * 1, [['S'], ['N']], [['WNW', 'WSW', 'ENE', 'ESE']], [], 0, 0)
+tile92 = Tile('tiles.png', 256 * 3, 256 * 1, [['S'], ['N']], [['WNW', 'WSW', 'ENE', 'ESE']], [], 0, 0)
+tile93 = Tile('tiles.png', 256 * 4, 256 * 1, [['S'], ['N']], [['WNW', 'WSW', 'ENE', 'ESE']], [], 0, 0)
+tile94 = Tile('tiles.png', 256 * 5, 256 * 1, [['N']], [['WNW', 'WSW', 'ENE', 'ESE', 'SSW', 'SSE']], [], 0, 0)
+tile95 = Tile('tiles.png', 256 * 6, 256 * 1, [['N']], [['WNW', 'WSW', 'ENE', 'ESE', 'SSW', 'SSE']], [], 0, 0)
+tile96 = Tile('tiles.png', 256 * 7, 256 * 1, [['N']], [['WNW', 'WSW', 'ENE', 'ESE', 'SSW', 'SSE']], [], 0, 0)
+tile97 = Tile('tiles.png', 256 * 8, 256 * 1, [['N']], [['WNW', 'WSW', 'ENE', 'ESE', 'SSW', 'SSE']], [], 0, 0)
+tile98 = Tile('tiles.png', 256 * 9, 256 * 1, [['N']], [['WNW', 'WSW', 'ENE', 'ESE', 'SSW', 'SSE']], [], 0, 0)
+tile99 = Tile('tiles.png', 256 * 10, 256 * 1, [['N']], [['WSW', 'SSW'], ['WNW', 'ENE', 'ESE', 'SSE']], [['W', 'S']], 0,
+              0)
+tile100 = Tile('tiles.png', 256 * 11, 256 * 1, [['N']], [['WSW', 'SSW'], ['WNW', 'ENE', 'ESE', 'SSE']], [['W', 'S']], 0,
+              0)
+tile101 = Tile('tiles.png', 256 * 12, 256 * 1, [['N']], [['WSW', 'SSW'], ['WNW', 'ENE', 'ESE', 'SSE']], [['W', 'S']], 0,
+              0)
+tile102 = Tile('tiles.png', 256 * 13, 256 * 1, [['N']], [['ESE', 'SSE'], ['ENE', 'WNW', 'WSW', 'SSW']], [['E', 'S']], 0,
+              0)
+tile103 = Tile('tiles.png', 256 * 14, 256 * 1, [['N']], [['ESE', 'SSE'], ['ENE', 'WNW', 'WSW', 'SSW']], [['E', 'S']], 0,
+              0)
+tile104 = Tile('tiles.png', 256 * 15, 256 * 1, [['N']], [['ESE', 'SSE'], ['ENE', 'WNW', 'WSW', 'SSW']], [['E', 'S']], 0,
+              0)
+
+tile105 = Tile('tiles.png', 256 * 0, 256 * 2, [['N']], [['ENE', 'WNW'], ['WSW', 'SSW'], ['ESE', 'SSE']],
+              [['E', 'C'], ['W', 'C'], ['S', 'C']], 0, 0)
+tile106 = Tile('tiles.png', 256 * 1, 256 * 2, [['N']], [['ENE', 'WNW'], ['WSW', 'SSW'], ['ESE', 'SSE']],
+              [['E', 'C'], ['W', 'C'], ['S', 'C']], 0, 0)
+tile107 = Tile('tiles.png', 256 * 2, 256 * 2, [['N']], [['ENE', 'WNW'], ['WSW', 'SSW'], ['ESE', 'SSE']],
+              [['E', 'C'], ['W', 'C'], ['S', 'C']], 0, 0)
+tile108 = Tile('tiles.png', 256 * 3, 256 * 2, [['N']], [['ENE', 'WNW'], ['WSW', 'SSW', 'ESE', 'SSE']], [['W', 'E']], 0,
+              0)
+tile109 = Tile('tiles.png', 256 * 4, 256 * 2, [['N']], [['ENE', 'WNW'], ['WSW', 'SSW', 'ESE', 'SSE']], [['W', 'E']], 0,
+              0)
+tile110 = Tile('tiles.png', 256 * 5, 256 * 2, [['N']], [['ENE', 'WNW'], ['WSW', 'SSW', 'ESE', 'SSE']], [['W', 'E']], 0,
+              0)
+tile111 = Tile('tiles.png', 256 * 6, 256 * 2, [['N']], [['ENE', 'WNW'], ['WSW', 'SSW', 'ESE', 'SSE']], [['W', 'E']], 0,
+              0)
+tile112 = Tile('tiles.png', 256 * 7, 256 * 2, [], [['NNW', 'WNW', 'WSW', 'SSW'], ['NNE', 'ENE', 'ESE', 'SSE']],
+              [['N', 'S']], 0, 0)
+tile113 = Tile('tiles.png', 256 * 8, 256 * 2, [], [['NNW', 'WNW', 'WSW', 'SSW'], ['NNE', 'ENE', 'ESE', 'SSE']],
+              [['N', 'S']], 0, 0)
+tile114 = Tile('tiles.png', 256 * 9, 256 * 2, [], [['NNW', 'WNW', 'WSW', 'SSW'], ['NNE', 'ENE', 'ESE', 'SSE']],
+              [['N', 'S']], 0, 0)
+tile115 = Tile('tiles.png', 256 * 10, 256 * 2, [], [['NNW', 'WNW', 'WSW', 'SSW'], ['NNE', 'ENE', 'ESE', 'SSE']],
+              [['N', 'S']], 0, 0)
+tile116 = Tile('tiles.png', 256 * 11, 256 * 2, [], [['NNW', 'WNW', 'WSW', 'SSW'], ['NNE', 'ENE', 'ESE', 'SSE']],
+              [['N', 'S']], 0, 0)
+tile117 = Tile('tiles.png', 256 * 12, 256 * 2, [], [['NNW', 'WNW', 'WSW', 'SSW'], ['NNE', 'ENE', 'ESE', 'SSE']],
+              [['N', 'S']], 0, 0)
+tile118 = Tile('tiles.png', 256 * 13, 256 * 2, [], [['NNW', 'WNW', 'WSW', 'SSW'], ['NNE', 'ENE', 'ESE', 'SSE']],
+              [['N', 'S']], 0, 0)
+tile119 = Tile('tiles.png', 256 * 14, 256 * 2, [], [['NNW', 'WNW', 'WSW', 'SSW'], ['NNE', 'ENE', 'ESE', 'SSE']],
+              [['N', 'S']], 0, 0)
+tile120 = Tile('tiles.png', 256 * 15, 256 * 2, [], [['WSW', 'SSW'], ['NNE', 'ENE', 'ESE', 'SSE', 'WNW', 'NNW']],
+              [['W', 'S']], 0, 0)
+
+tile121 = Tile('tiles.png', 256 * 0, 256 * 3, [], [['WSW', 'SSW'], ['NNE', 'ENE', 'ESE', 'SSE', 'WNW', 'NNW']],
+              [['W', 'S']], 0, 0)
+tile122 = Tile('tiles.png', 256 * 1, 256 * 3, [], [['WSW', 'SSW'], ['NNE', 'ENE', 'ESE', 'SSE', 'WNW', 'NNW']],
+              [['W', 'S']], 0, 0)
+tile123 = Tile('tiles.png', 256 * 2, 256 * 3, [], [['WSW', 'SSW'], ['NNE', 'ENE', 'ESE', 'SSE', 'WNW', 'NNW']],
+              [['W', 'S']], 0, 0)
+tile124 = Tile('tiles.png', 256 * 3, 256 * 3, [], [['WSW', 'SSW'], ['NNE', 'ENE', 'ESE', 'SSE', 'WNW', 'NNW']],
+              [['W', 'S']], 0, 0)
+tile125 = Tile('tiles.png', 256 * 4, 256 * 3, [], [['WSW', 'SSW'], ['NNE', 'ENE', 'ESE', 'SSE', 'WNW', 'NNW']],
+              [['W', 'S']], 0, 0)
+tile126 = Tile('tiles.png', 256 * 5, 256 * 3, [], [['WSW', 'SSW'], ['NNE', 'ENE', 'ESE', 'SSE', 'WNW', 'NNW']],
+              [['W', 'S']], 0, 0)
+tile127 = Tile('tiles.png', 256 * 6, 256 * 3, [], [['WSW', 'SSW'], ['NNE', 'ENE', 'ESE', 'SSE', 'WNW', 'NNW']],
+              [['W', 'S']], 0, 0)
+tile128 = Tile('tiles.png', 256 * 7, 256 * 3, [], [['WSW', 'SSW'], ['NNE', 'ENE', 'ESE', 'SSE', 'WNW', 'NNW']],
+              [['W', 'S']], 0, 0)
+tile129 = Tile('tiles.png', 256 * 8, 256 * 3, [], [['ENE', 'WNW', 'NNE', 'NNW'], ['WSW', 'SSW'], ['ESE', 'SSE']],
+              [['E', 'C'], ['W', 'C'], ['S', 'C']], 0, 0)
+tile130 = Tile('tiles.png', 256 * 9, 256 * 3, [], [['ENE', 'WNW', 'NNE', 'NNW'], ['WSW', 'SSW'], ['ESE', 'SSE']],
+              [['E', 'C'], ['W', 'C'], ['S', 'C']], 0, 0)
+tile131 = Tile('tiles.png', 256 * 10, 256 * 3, [], [['ENE', 'WNW', 'NNE', 'NNW'], ['WSW', 'SSW'], ['ESE', 'SSE']],
+              [['E', 'C'], ['W', 'C'], ['S', 'C']], 0, 0)
+tile132 = Tile('tiles.png', 256 * 11, 256 * 3, [], [['ENE', 'WNW', 'NNE', 'NNW'], ['WSW', 'SSW'], ['ESE', 'SSE']],
+              [['E', 'C'], ['W', 'C'], ['S', 'C']], 0, 0)
+tile133 = Tile('tiles.png', 256 * 12, 256 * 3, [], [['ENE', 'NNE'], ['WSW', 'SSW'], ['ESE', 'SSE'], ['WNW', 'NNW']],
+              [['E', 'C'], ['W', 'C'], ['S', 'C'], ['N', 'C']], 0, 0)
+tile134 = Tile('tiles.png', 256 * 13, 256 * 3, [], [['ENE', 'NNE', 'WSW', 'SSW', 'ESE', 'SSE', 'WNW', 'NNW']], [], 1, 0)
+tile135 = Tile('tiles.png', 256 * 14, 256 * 3, [], [['ENE', 'NNE', 'WSW', 'SSW', 'ESE', 'SSE', 'WNW', 'NNW']], [], 1, 0)
+tile136 = Tile('tiles.png', 256 * 15, 256 * 3, [], [['ENE', 'NNE', 'WSW', 'SSW', 'ESE', 'SSE', 'WNW', 'NNW']], [], 1, 0)
+
+tile137 = Tile('tiles.png', 256 * 0, 256 * 4, [], [['ENE', 'NNE', 'WSW', 'SSW', 'ESE', 'SSE', 'WNW', 'NNW']], [], 1, 0)
+tile138 = Tile('tiles.png', 256 * 1, 256 * 4, [], [['ENE', 'NNE', 'WSW', 'SSW', 'ESE', 'SSE', 'WNW', 'NNW']],
+              [['C', 'S']], 1, 0)
+tile139 = Tile('tiles.png', 256 * 2, 256 * 4, [], [['ENE', 'NNE', 'WSW', 'SSW', 'ESE', 'SSE', 'WNW', 'NNW']],
+              [['C', 'S']], 1, 0)
+tile140 = Tile('tiles.png', 256 * 3, 256 * 4, [['N', 'E', 'S', 'W']], [], [], 0, 1)
+tile141 = Tile('tiles.png', 256 * 4, 256 * 4, [['N', 'E', 'W']], [['SSE', 'SSW']], [], 0, 0)
+tile142 = Tile('tiles.png', 256 * 5, 256 * 4, [['N', 'E', 'W']], [['SSE', 'SSW']], [], 0, 0)
+tile143 = Tile('tiles.png', 256 * 6, 256 * 4, [['N', 'E', 'W']], [['SSE', 'SSW']], [], 0, 0)
+tile144 = Tile('tiles.png', 256 * 7, 256 * 4, [['N', 'E', 'W']], [['SSE', 'SSW']], [], 0, 1)
+

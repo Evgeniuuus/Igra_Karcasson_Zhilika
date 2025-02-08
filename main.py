@@ -122,11 +122,11 @@ class App:
 
         def gamesetup(self):
             tileOrder = []
-            for i in range(72):
+            for i in range(144):
                 tileOrder.append(i + 1)
             tileOrder.pop(tileOrder.index(36))
             self.tileStack.clear
-            for i in range(71):
+            for i in range(143):
                 randIndex = random.randint(0, len(tileOrder) - 1)
                 self.tileStack.append(tileOrder[randIndex])
                 tileOrder.pop(randIndex)
