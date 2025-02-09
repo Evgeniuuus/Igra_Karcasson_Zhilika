@@ -37,8 +37,11 @@ pygame.init()
 FPS = 144
 FramePerSec = pygame.time.Clock()
 
-SCREEN_WIDTH = 1600
-SCREEN_HEIGHT = 900
+
+info = pygame.display.Info()
+SCREEN_WIDTH = info.current_w
+SCREEN_HEIGHT = info.current_h
+
 
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 pygame.display.set_caption("Каркассон Жилика")
