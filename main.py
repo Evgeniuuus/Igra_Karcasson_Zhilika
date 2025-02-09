@@ -1023,7 +1023,7 @@ game = app.Game()
 
 pygame.mixer.init()
 
-music_path = get_resource_path("background_music.mp3")
+music_path = get_resource_path("background.mp3")
 if os.path.exists(music_path):
     pygame.mixer.music.load(music_path)
     pygame.mixer.music.play(-1)
