@@ -122,11 +122,11 @@ class App:
 
         def gamesetup(self):
             tileOrder = []
-            for i in range(144):
+            for i in range(game_mode):
                 tileOrder.append(i + 1)
             tileOrder.pop(tileOrder.index(36))
             self.tileStack.clear
-            for i in range(143):
+            for i in range(game_mode-1):
                 randIndex = random.randint(0, len(tileOrder) - 1)
                 self.tileStack.append(tileOrder[randIndex])
                 tileOrder.pop(randIndex)
@@ -1007,6 +1007,17 @@ class App:
                 return 'field'
 
 
+def set_game_mode(mode):
+    global game_mode
+    game_mode = mode
+    menu.toggle()
+    settingsMenu.toggle()
+
+
+def disable_dlc():
+    dlc_button.set_title("Его пока НЕТ!!!")
+
+
 app = App()
 game = app.Game()
 
@@ -1020,9 +1031,17 @@ if os.path.exists(music_path):
 else:
     print("Ошибка: Файл музыки не найден!")
 
-menu = pygame_menu.Menu('', SCREEN_WIDTH, SCREEN_HEIGHT, theme=pygame_menu.themes.THEME_DARK)
-menu.add.button('ИГРАТЬ ;)', game.launchsettingsMenu)
-menu.add.button('ВЫЙТИ :(', pygame_menu.events.EXIT)
+
+game_mode = None
+
+menu = pygame_menu.Menu('Выберите длительность игры', SCREEN_WIDTH, SCREEN_HEIGHT, theme=pygame_menu.themes.THEME_DARK)
+menu.add.button('Короткая  (72 тайла)', lambda: set_game_mode(72))
+menu.add.button('Средняя  (144 тайла)', lambda: set_game_mode(144))
+menu.add.button('Длинная (216 тайлов)', lambda: set_game_mode(216))
+menu.add.label('')
+
+dlc_button = menu.add.button('DLC', disable_dlc, font_color=(255, 0, 0))
+
 
 settingsMenu = pygame_menu.Menu('', SCREEN_WIDTH, SCREEN_HEIGHT, theme=pygame_menu.themes.THEME_DARK)
 settingsMenu.toggle()
