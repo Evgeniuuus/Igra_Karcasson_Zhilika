@@ -287,6 +287,11 @@ class App:
                 self.drawGame()
                 self.drawGameState()
 
+                exit_text = font.render("Для выхода нажмите ESC", True, (0, 0, 0))
+                text_rect = exit_text.get_rect(bottomright=(SCREEN_WIDTH - 10, SCREEN_HEIGHT - 65))
+                screen.blit(exit_text, text_rect)
+
+
         def placeTile(self, mousePos):
             if len(self.tileStack) > 0:
                 posX = mousePos[0] - self.relativeX
@@ -1035,6 +1040,12 @@ while True:
         if event.type == QUIT:
             pygame.quit()
             sys.exit()
+
+        if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_ESCAPE:
+                pygame.quit()
+                sys.exit()
+
         if event.type == pygame.MOUSEMOTION:
             app.mouseMoving = 1
         if event.type == pygame.MOUSEBUTTONDOWN:
