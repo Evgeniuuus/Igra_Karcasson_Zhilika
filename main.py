@@ -46,11 +46,14 @@ SCREEN_HEIGHT = info.current_h
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 pygame.display.set_caption("Каркассон Жилика")
 
-tileset = pygame.image.load("textures/tiles.png").convert()
-blueMeeple = pygame.image.load("textures/blue-meeple.png").convert_alpha()
-greenMeeple = pygame.image.load("textures/green-meeple.png").convert_alpha()
-redMeeple = pygame.image.load("textures/red-meeple.png").convert_alpha()
-yellowMeeple = pygame.image.load("textures/yellow-meeple.png").convert_alpha()
+try:
+    tileset = pygame.image.load("textures/tiles.png").convert()
+    blueMeeple = pygame.image.load("textures/blue-meeple.png").convert_alpha()
+    greenMeeple = pygame.image.load("textures/green-meeple.png").convert_alpha()
+    redMeeple = pygame.image.load("textures/red-meeple.png").convert_alpha()
+    yellowMeeple = pygame.image.load("textures/yellow-meeple.png").convert_alpha()
+except Exception as e:
+    print(f"Ошибка {e}")
 
 font = pygame.font.SysFont('calibri', 24)
 
